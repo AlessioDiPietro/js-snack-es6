@@ -72,20 +72,19 @@ const serieA = [
     }
 ];
 
-let campionato = [];
-
+const campionato = [];
 
 for (let i = 0; i < serieA.length; i++){
-
+    
+    let {nomeSquadra,falliSubiti} = serieA[i];
+    
     serieA[i].puntiFatti = numRand(0, 10);
     serieA[i].falliSubiti = numRand(0, 20);
-
-    campionato.push(serieA[i].nomeSquadra);
-    campionato.push(serieA[i].falliSubiti);
-
+    
+    campionato.push({nomeSquadra,falliSubiti});
+    
 }
 
-const {nomeSquadra,puntiFatti,falliSubiti} = campionato;
+
 
 console.log(campionato);
-
