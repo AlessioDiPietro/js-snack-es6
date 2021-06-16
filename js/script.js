@@ -76,10 +76,11 @@ const campionato = [];
 
 for (let i = 0; i < serieA.length; i++){
     
-    let {nomeSquadra,falliSubiti} = serieA[i];
-    
     serieA[i].puntiFatti = numRand(0, 10);
     serieA[i].falliSubiti = numRand(0, 20);
+    
+    let {nomeSquadra,falliSubiti} = serieA[i];
+    
     
     campionato.push({nomeSquadra,falliSubiti});
     
