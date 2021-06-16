@@ -34,8 +34,11 @@ const {nome,peso} = biciLight;
 console.log(nome,peso);
 
 document.getElementById("es_1").innerHTML= 
-'la bici più leggera è ${nome}
-';
+`   
+    La bici più leggera è:
+    <h4>${nome}</h4>
+`;
+
 
 
 
